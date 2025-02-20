@@ -1,0 +1,136 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Home } from 'lucide-react';
+import { Briefcase } from 'lucide-react';
+import { FolderKanban } from 'lucide-react';
+
+// Home/Landing Page Component
+const HomePage = () => {
+  return (
+    <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center p-4">
+      <div className="max-w-2xl text-center">
+        <h1 className="text-4xl font-bold mb-4 text-gray-800">Your Name</h1>
+        <p className="text-xl text-gray-600 mb-8">
+          Software Developer | Tech Enthusiast | Problem Solver
+        </p>
+        <div className="flex justify-center space-x-4">
+          <Link 
+            to="/experience" 
+            className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+          >
+            View Experience
+          </Link>
+          <Link 
+            to="/projects" 
+            className="px-6 py-3 border-2 border-blue-500 text-blue-500 rounded-lg hover:bg-blue-50 transition"
+          >
+            See Projects
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Experience Page Component
+const ExperiencePage = () => {
+  const experiences = [
+    {
+      company: "Tech Company",
+      role: "Senior Software Engineer",
+      period: "2021 - Present",
+      description: "Developed scalable web applications using React and Node.js"
+    },
+    {
+      company: "Startup Inc.",
+      role: "Software Developer",
+      period: "2019 - 2021",
+      description: "Led frontend development and created responsive design systems"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gray-100 p-8">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8 flex items-center">
+          <Briefcase className="mr-4" /> Professional Experience
+        </h2>
+        {experiences.map((exp, index) => (
+          <div 
+            key={index} 
+            className="bg-white shadow-md rounded-lg p-6 mb-4"
+          >
+            <h3 className="text-xl font-semibold">{exp.role}</h3>
+            <p className="text-gray-600 mb-2">{exp.company} | {exp.period}</p>
+            <p>{exp.description}</p>
+          </div>
+        ))}
+        <Link 
+          to="/" 
+          className="mt-6 inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+        >
+          Back to Home
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+// Projects Page Component
+const ProjectsPage = () => {
+  const projects = [
+    {
+      name: "Portfolio Website",
+      description: "Responsive personal portfolio built with React and Tailwind CSS",
+      technologies: ["React", "Tailwind", "React Router"]
+    },
+    {
+      name: "E-commerce Platform",
+      description: "Full-stack e-commerce application with payment integration",
+      technologies: ["Node.js", "React", "MongoDB", "Stripe"]
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gray-100 p-8">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8 flex items-center">
+          <FolderKanban className="mr-4" /> My Projects
+        </h2>
+        {projects.map((project, index) => (
+          <div 
+            key={index} 
+            className="bg-white shadow-md rounded-lg p-6 mb-4"
+          >
+            <h3 className="text-xl font-semibold">{project.name}</h3>
+            <p className="text-gray-600 mb-2">
+              {project.technologies.join(" | ")}
+            </p>
+            <p>{project.description}</p>
+          </div>
+        ))}
+        <Link 
+          to="/" 
+          className="mt-6 inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+        >
+          Back to Home
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+// Main App Component with Routing
+const PortfolioApp = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/experience" element={<ExperiencePage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+      </Routes>
+    </Router>
+  );
+};
+
+export default PortfolioApp;
