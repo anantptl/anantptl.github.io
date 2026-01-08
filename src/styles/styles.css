@@ -85,12 +85,17 @@ body {
     color: var(--accent-color);
 }
 
+.navbar-custom .nav-link.active {
+    color: var(--accent-color);
+    /* font-weight: 700; */
+}
+
 /* Hero section */
 .hero {
     background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
     color: var(--text-light);
-    padding: 100px 0;
-    text-align: center;
+    /* padding: 100px 0;
+    text-align: center; */
 }
 
 .hero h1 {
@@ -103,6 +108,10 @@ body {
     font-size: 1.25rem;
     margin-bottom: 30px;
     opacity: 0.9;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
 }
 
 /* Profile picture styling */
