@@ -59,3 +59,31 @@ checkFade();
 
 // Run on scroll
 window.addEventListener('scroll', checkFade);
+
+// Webpage Theme
+const toggleButton = document.getElementById('theme-toggle');
+const body = document.body;
+const icon = toggleButton.querySelector('i');
+
+// Check local storage for theme preference on load
+const currentTheme = localStorage.getItem('theme');
+// const currentTheme = "dark";
+if (currentTheme === 'dark') {
+    body.setAttribute('data-theme', 'dark');
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+}
+
+toggleButton.addEventListener('click', () => {
+    if (body.hasAttribute('data-theme')) {
+        body.removeAttribute('data-theme');
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+        localStorage.setItem('theme', 'light');
+    } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+        localStorage.setItem('theme', 'dark');
+    }
+});

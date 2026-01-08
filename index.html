@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-
-    <!-- Custom CSS and Script -->
-    <link href="./src/styles/styles.css" rel="stylesheet">
-    <script src="./src/js/script.js" type="module"></script>
+    <title>Anant Patel - Website</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
@@ -16,12 +12,20 @@
     <!-- Font Awesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
+    <!-- Custom CSS and Script -->
+    <link href="./src/styles/styles.css" rel="stylesheet">
+    <script src="./src/js/script.js" type="module"></script>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Anant Patel</a>
+            
+            <button id="theme-toggle" class="btn nav-link" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,6 +36,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#experience">Experience</a>
@@ -81,8 +88,8 @@
                     <h3>Who am I?</h3>
                     <p class="lead">I'm a student at North Carolina State University studying Computer Science.</p>
                     <p>
-                        I am a undergraduate senior and a masters student, participating in North Carolina State University's Accelerated Bachelor/Master's program (ABM).
-                        I conduct undergraduate research with Large Language Models and Retrieval-Augmented Generation (RAG) to explore novel ways to improve microprocessor security. 
+                        I am a master's student, participating in North Carolina State University's Accelerated Bachelor/Master's program (ABM).
+                        I conducted undergraduate research with Large Language Models and Retrieval-Augmented Generation (RAG) to explore novel ways to improve microprocessor security. 
                         Currently, I am working with Hitachi Energy on a senior design project to work with embedded devices and driver development.
                         Previously, I interned at the National Security Agency (NSA) as an AI intern, where I worked on a RAG pipeline to improve information retrieval and answer generation.
                     </p>
@@ -148,27 +155,37 @@
     </section> -->
 
     <!-- Education -->
-    <!-- <section id="education" class="py-5 my-5">
-        <div clas="container">
+    <section id="education" class="py-5 my-5">
+        <div class="container">
             <h2 class="section-title">Education</h2>
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <div class="education-item fade-in">
-                        <h3 class="education-title">North Carolina State University</h3>
-                        <div class="education-subtitle">Bachelor of Science in Computer Science</div>
-                        <div class="education-date">Aug. 2021 - May 2025</div>
-                        <p>Concentration in Software Engineering</p>
-                    </div>
-                    <div class="education-item fade-in">
-                        <h3 class="education-title">North Carolina State University</h3>
-                        <div class="education-subtitle">Master of Science in Computer Science</div>
-                        <div class="education-date">Aug. 2021 - May 2025</div>
-                        <p>Concentration in Artificial Intelligence</p>
-                    </div>
+                    <ul class="education-list">
+                        <li class="education-list-item fade-in">
+                            <div>
+                                <h3 class="education-title">North Carolina State University</h3>
+                                <div class="education-subtitle">Master of Computer Science</div>
+                                <div class="education-gpa">GPA: 4.0/4.0</div>
+                                <div class="education-date">Aug. 2025 - May 2026</div>
+                            </div>
+                        </li>
+                        <li class="education-list-item fade-in">
+                            <div class="education-item fade-in">
+                                <h3 class="education-title">North Carolina State University</h3>
+                                <div class="education-subtitle">Bachelor of Science in Computer Science</div>
+                                <div class="education-subtitle">Minor in Business Administration</div>
+                                <div class="education-gpa">GPA: 3.98/4.0</div>
+                                <div class="education-date">Aug. 2021 - May 2025</div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Experience Section -->
     <section id="experience" class="py-5 my-5">
@@ -177,15 +194,34 @@
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <ul class="timeline text-decoration-none">
-                        <!-- Experience Item 1 -->
                         <li class="timeline-item fade-in">
                             <div class="timeline-header">
                                 <div>
-                                    <h3 class="timeline-title">Embedded Software Developer</h3>
+                                    <h3 class="timeline-title">Software Engineering Intern</h3>
+                                    <div class="timeline-subtitle">North Carolina State University</div>
+                                    <div class="timeline-location">Raleigh, North Carolina, USA</div>
+                                </div>
+                                <span class="timeline-date">May 2025 — Jul. 2025</span>
+                            </div>
+                            <div class="timeline-content">
+                                <p>Improving NC State's DeepThought learning plaform for students.</p>
+                                <ul>
+                                    <li>Prototyped front-end webpages for university faculty using Python (Flask) with wireframing and UI design.</li>
+                                    <li>Debugged and optimized an existing Flask application, improving application stability, performance, and maintainability.</li>
+                                    <li>Enhanced a large language model by analyzing student forum and help-request data, improving response accuracy and contextual relevance for an online learning platform.</li>
+                                    <li>Communicated project progress, challenges, and outcomes through weekly meetings and a technical poster presentation.</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="timeline-item fade-in">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Software Developer (Senior Design)</h3>
                                     <div class="timeline-subtitle">Hitachi Energy & North Carolina State University</div>
                                     <div class="timeline-location">Raleigh, North Carolina, USA</div>
                                 </div>
-                                <span class="timeline-date">Jan. 2025 - Present</span>
+                                <span class="timeline-date">Jan. 2025 — May 2025</span>
                             </div>
                             <div class="timeline-content">
                                 <p>Working with single-board computers to create drivers for Hitachi's TXpert Ecosystem.</p>
@@ -199,7 +235,6 @@
                             </div>
                         </li>
                         
-                        <!-- Experience Item 2 -->
                         <li class="timeline-item fade-in">
                             <div class="timeline-header">
                                 <div>
@@ -207,7 +242,7 @@
                                     <div class="timeline-subtitle">North Carolina State University</div>
                                     <div class="timeline-location">Raleigh, North Carolina, USA</div>
                                 </div>
-                                <span class="timeline-date">Sep. 2023 - Present</span>
+                                <span class="timeline-date">Sep. 2023 — May 2025</span>
                             </div>
                             <div class="timeline-content">
                                 <p>Worked with Large Language Models, Retrieval-Augmented Generation, and Machine Learning for microprocessor security.</p>
@@ -219,7 +254,6 @@
                             </div>
                         </li>
                         
-                        <!-- Experience Item 3 -->
                         <li class="timeline-item fade-in">
                             <div class="timeline-header">
                                 <div>
@@ -227,7 +261,7 @@
                                     <div class="timeline-subtitle">National Security Agency</div>
                                     <div class="timeline-location">Catonsville, Maryland, USA</div>
                                 </div>
-                                <span class="timeline-date">Jun. 2024 - Aug. 2024</span>
+                                <span class="timeline-date">Jun. 2024 — Aug. 2024</span>
                             </div>
                             <div class="timeline-content">
                                 <p>Served as a researcher at the Laboratory of Physical Sciences at Research Park.</p>
@@ -254,11 +288,63 @@
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <ul class="project-list">
-                        <!-- Project 1 -->
+                        <!-- Projects -->
+                        <li class="project-list-item fade-in">
+                            <div class="project-header">
+                                <h3 class="project-title">Battle Zone! (Video Game)</h3>
+                                <span class="project-duration">Nov. 2025 — Dec. 2025</span>
+                            </div>
+                            <div class="project-description">
+                                <p>
+                                    A spin on the classic Battle Zone! video game by Atari. This is a custom version of Battle Zone! built using WebGL and rasterization.
+                                    Features include being able to spawn and attack enemy tanks. Also has a respawn feature for the player, allowing them to get back into the fight!
+                                </p>
+                            </div>
+                            <div class="project-tags">
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">WebGL</span>
+                                <span class="project-tag">GitHub</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://anantptl.github.io/csc561-programs/prog5/index.html" target="_blank" class="btn btn-sm btn-primary">Play Here!</a>
+                                <a href="https://github.com/anantptl/csc561-programs/tree/main/prog5" target="_blank" class="btn btn-sm btn-primary">GitHub Repo</a>
+                            </div>
+                        </li>
+
+                        <li class="project-list-item fade-in">
+                            <div class="project-header">
+                                <h3 class="project-title">2D Game Engine</h3>
+                                <span class="project-duration">Aug. 2025 — Dec. 2025</span>
+                            </div>
+                            <div class="project-description">
+                                <p>
+                                    Developed a modular, high-performance game engine from the ground up, focusing on architectural scalability, networked multiplayer, and efficient memory management.
+                                    <ul>
+                                        <li>Engineered a modular game engine in C++ using a component-based object model to decouple physics, graphics, and entity data, ensuring high maintainability and extensibility.</li>
+                                        <li>Optimized system performance by implementing custom memory pools for over 10,000 entities and components, utilizing pre-allocation to eliminate runtime dynamic allocation overhead.</li>
+                                        <li>Developed a server-authoritative networking model for multi-client synchronization alongside a producer-consumer job system to parallelize physics simulations.</li>
+                                        <li>Built a robust event management architecture to handle immediate and deferred engine events, including collisions, input processing, and entity lifecycle changes.</li>
+                                        <li>Designed a frame-based replay system that serializes entity states to disk, enabling localized playback with rewind and fast-forward functionality.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="project-tags">
+                                <span class="project-tag">C++</span>
+                                <span class="project-tag">CMake</span>
+                                <span class="project-tag">SDL3</span>
+                                <span class="project-tag">ZeroMQ</span>
+                                <span class="project-tag">GitHub</span>
+                            </div>
+                            <div class="project-actions">
+                                <!-- <a href="" target="_blank" class="btn btn-sm btn-primary">Play Here!</a> -->
+                                <a href="https://github.com/anantptl/csc581-game-engine/tree/development" target="_blank" class="btn btn-sm btn-primary">GitHub Repo</a>
+                            </div>
+                        </li>
+
                         <li class="project-list-item fade-in">
                             <div class="project-header">
                                 <h3 class="project-title">Progressive Web Application</h3>
-                                <span class="project-duration">Sep. 2024 - Dec. 2024</span>
+                                <span class="project-duration">Sep. 2024 — Dec. 2024</span>
                             </div>
                             <div class="project-description">
                                 <p>The project involved developing a progressive web application (PWA) for task management, enabling users to create, track tasks, and set reminders with push notifications. 
@@ -281,16 +367,15 @@
                                 <span class="project-tag">Github</span>
                             </div>
                             <div class="project-actions">
-                                <!-- <a href="#" class="btn btn-sm btn-outline-primary">Live Demo</a> -->
-                                <a href="https://github.com/anantptl/task-flow" class="btn btn-sm btn-primary">GitHub Repo</a>
+                                <!-- <a href="#" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a> -->
+                                <a href="https://github.com/anantptl/task-flow" target="_blank" class="btn btn-sm btn-primary">GitHub Repo</a>
                             </div>
                         </li>
                         
-                        <!-- Project 2 -->
                         <li class="project-list-item fade-in">
                             <div class="project-header">
                                 <h3 class="project-title">Full-Stack Web Application</h3>
-                                <span class="project-duration">Aug. 2023 - Dec. 2023</span>
+                                <span class="project-duration">Aug. 2023 — Dec. 2023</span>
                             </div>
                             <div class="project-description">
                                 <p>
@@ -311,36 +396,13 @@
                                 <span class="project-tag">Github</span>
                             </div>
                             <div class="project-actions">
-                                <!-- <a href="#" class="btn btn-sm btn-outline-primary">Live Demo</a> -->
-                                <a href="https://github.com/anantptl/coffee-maker" class="btn btn-sm btn-primary">GitHub Repo</a>
+                                <!-- <a href="#" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a> -->
+                                <a href="https://github.com/anantptl/coffee-maker" target="_blank" class="btn btn-sm btn-primary">GitHub Repo</a>
                             </div>
                         </li>
-                        
-                        <!-- Project 3 -->
-                        <!-- <li class="project-list-item fade-in">
-                            <div class="project-header">
-                                <h3 class="project-title">Textbook Application</h3>
-                                <span class="project-duration">aug 2024 - Dec 2024</span>
-                            </div>
-                            <div class="project-description">
-                                <p>
-                                    Built a textbook application that allows 
-                                </p>
-                            </div>
-                            <div class="project-tags">
-                                <span class="project-tag">Java</span>
-                                <span class="project-tag">MySQL</span>
-                                <span class="project-tag">JDBC</span>
-                                <span class="project-tag">GitHub</span>
-                            </div>
-                            <div class="project-actions">
-                                <a href="#" class="btn btn-sm btn-outline-primary">Live Demo</a>
-                                <a href="#" class="btn btn-sm btn-primary">GitHub Repo</a>
-                            </div>
-                        </li>
-                    </ul> -->
+                    </ul>
                     <div class="text-center">
-                        <a href="https://github.com/anantptl/" class="btn btn-sm btn-primary col-lg-2">My Other Projects!</a>
+                        <a href="https://github.com/anantptl/" target="_blank" class="btn btn-sm btn-primary col-lg-2">My Other Projects!</a>
                     </div>
                 </div>
             </div>
@@ -348,7 +410,7 @@
     </section>
 
     <!-- Coursework Section -->
-    <section id="coursework" class="py-5 my-5 bg-light">
+    <section id="coursework" class="py-5 my-5">
         <div class="container">
             <h2 class="section-title">Coursework</h2>
             <div class="row">
@@ -386,12 +448,34 @@
                                     Key topics include embedded systems, real-time systems, and machine learning as applied to autonomous vehicles.
                                 </p>
                             </li>
+                            <li class="course-item">
+                                <span class="course-code">CSC 561</span> - 
+                                <span class="course-name">Principles of Computer Graphics
+                                <p class="course-description">
+                                    Introduction to computer graphics. Includes learning about ray tracing and rasterization with WebGL. Projects utilized WebGL to create scenes that the user can manipulate.
+                                </p>
+                            </li>
+                            <li class="course-item">
+                                <span class="course-code">CSC 574</span> - 
+                                <span class="course-name">Computer and Network Security
+                                <p class="course-description">
+                                    Introduction on computer security (threat models, cryptography, user authentication), network security (TLS, routing, DNS, etc.), vulnerabilities, and privacy.
+                                </p>
+                            </li>
+                            <li class="course-item">
+                                <span class="course-code">CSC 581</span> - 
+                                <span class="course-name">Game Engine Foundations
+                                <p class="course-description">
+                                    Introduction on game engine designs and concepts. Includes working with SDL3, ZeroMQ, and other libraries to build a functioning 2D game engine. Game engine supports
+                                    the use of sprites, networking (client-server & peer-to-peer), multi-key inputs, events, etc. Heavy emphasis on design of the engine and tradeoffs of implementation.
+                                </p>
+                            </li>
                         </ul>
                     </div>
 
                     <!-- Undergraduate Courses -->
                     <div class="coursework-category fade-in">
-                        <h3 class="coursework-category-title">Key Undergraduate Courses</h3>
+                        <h3 class="coursework-category-title">Undergraduate Courses</h3>
                         <div class="row">
                             <div class="col-md-6">
                                 <ul class="course-list">
@@ -423,7 +507,7 @@
                                     <li class="course-item">
                                         <span class="course-code">CSC 246</span> - 
                                         <span class="course-name">Concepts and Facilities of Operating Systems for Computer Scientists</span>
-                                        <p class="course-description">Fundamental concepts of operating systems like multi-threading.</p>
+                                        <p class="course-description">Fundamental concepts of operating systems like proceses, threads, file system, etc.</p>
                                     </li>
                                     <li class="course-item">
                                         <span class="course-code">CSC 342</span> - 
@@ -477,9 +561,9 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5 my-5">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title">Contact</h2>
                 <div class="col-lg-6">
                     <div class="contact-info">
                         <div class="contact-info-item">
@@ -547,8 +631,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="mb-md-0">© 2025 Anant Patel</p>
-                    <p class="mb-md-0"><small>Updated as of 3/18/2025</small></p>
+                    <p class="mb-md-0"><small>Made by Anant Patel</small></p>
+                    <p class="mb-md-0"><small>Last Updated - Jan. 7, 2026</small></p>
                 </div>
                 <div class="col-md-6">
                     <div class="social-links text-md-end">
