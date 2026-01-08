@@ -20,12 +20,12 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Anant Patel</a>
-            
-            <button id="theme-toggle" class="btn nav-link" aria-label="Toggle Theme">
-                <i class="fas fa-moon"></i>
-            </button>
-
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand">Anant Patel</a>
+                <button id="theme-toggle" class="btn nav-link" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -67,7 +67,7 @@
                         <img src="../images/profile.jpg" alt="Profile Picture" class=" img-fluid shadow-lg">
                     </div> -->
                     <br>
-                    <p>Computer Science @ NCSU</p>
+                    <p>Computer Science at North Carolina State University</p>
                     <!-- <a href="#contact" class="btn btn-light btn-lg">Get In Touch</a> -->
                 </div>
             </div>
@@ -78,81 +78,33 @@
     <section id="about" class="py-5 my-5">
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <div class="row align-items-center">
+            <div class="align-items-center">
                 <!-- <div class="col-md-5">
                     <div class="about-img">
                         <img src="/api/placeholder/600/600" alt="Your Name" class="img-fluid">
                     </div>
                 </div> -->
-                <div class="col-md-12 mt-4 mt-md-0">
-                    <h3>Who am I?</h3>
-                    <p class="lead">I'm a student at North Carolina State University studying Computer Science.</p>
+                <div class="col-lg-10 mx-auto">
+                    <!-- <h3>Who am I?</h3>
+                    <p class="lead">I'm a student at North Carolina State University studying Computer Science.</p> -->
                     <p>
                         I am a master's student, participating in North Carolina State University's Accelerated Bachelor/Master's program (ABM).
-                        I conducted undergraduate research with Large Language Models and Retrieval-Augmented Generation (RAG) to explore novel ways to improve microprocessor security. 
-                        Currently, I am working with Hitachi Energy on a senior design project to work with embedded devices and driver development.
-                        Previously, I interned at the National Security Agency (NSA) as an AI intern, where I worked on a RAG pipeline to improve information retrieval and answer generation.
+                        I have been studying Computer Science since sophomore year of high school, initially learning Visual Basic and Java. Since then, I have
+                        grown and learned more about Java, C/C++, and Python, along with some lesser known languages.
                     </p>
                     <p>
-                        When I am not working, I enjoy working out at the gym, running, reading books, and learning new things!
+                        When I am not working or studying, I enjoy working out at the gym with friends, 
+                        playing intramural sports (soccer being my favorite), running outside, 
+                        reading books, and learning new things! 
                     </p>
-                    <div class="mt-4">
-                        <!-- <a href="#" class="btn btn-outline-primary me-3">Download CV</a> -->
-                        <!-- <a href="#projects" class="btn btn-primary">View Projects</a> -->
-                    </div>
+                    <!-- <div class="mt-4">
+                        <a href="#" class="btn btn-outline-primary me-3">Download CV</a>
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                    </div> -->
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Skills Section
-    <section id="skills" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="skill-item">
-                        <div class="skill-name">HTML/CSS</div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">JavaScript</div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">React</div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 85%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="skill-item">
-                        <div class="skill-name">Node.js</div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">UI/UX Design</div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 75%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Database Management</div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 85%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- Education -->
     <section id="education" class="py-5 my-5">
@@ -163,32 +115,33 @@
                     <ul class="education-list">
                         <li class="education-list-item fade-in">
                             <div>
-                                <h3 class="education-title">North Carolina State University</h3>
+                                <div class="education-header">
+                                    <h3 class="education-title">North Carolina State University</h3>
+                                    <div class="education-date">Aug. 2025 — May 2026</div>
+                                </div>
                                 <div class="education-subtitle">Master of Computer Science</div>
                                 <div class="education-gpa">GPA: 4.0/4.0</div>
-                                <div class="education-date">Aug. 2025 - May 2026</div>
                             </div>
                         </li>
                         <li class="education-list-item fade-in">
                             <div class="education-item fade-in">
-                                <h3 class="education-title">North Carolina State University</h3>
+                                <div class="education-header">
+                                    <h3 class="education-title">North Carolina State University</h3>
+                                    <div class="education-date">Aug. 2021 — May 2025</div>
+                                </div>
                                 <div class="education-subtitle">Bachelor of Science in Computer Science</div>
                                 <div class="education-subtitle">Minor in Business Administration</div>
                                 <div class="education-gpa">GPA: 3.98/4.0</div>
-                                <div class="education-date">Aug. 2021 - May 2025</div>
                             </div>
                         </li>
-
                     </ul>
-
-
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-5 my-5">
+    <!-- <section id="experience" class="py-5 my-5">
         <div class="container">
             <h2 class="section-title">Experience</h2>
             <div class="row">
@@ -264,6 +217,92 @@
                                 <span class="timeline-date">Jun. 2024 — Aug. 2024</span>
                             </div>
                             <div class="timeline-content">
+                                <p>Served as a researcher at the Laboratory of Physical Sciences at Research Park.</p>
+                                <ul>
+                                    <li>Co-authored and presented a research paper detailing project methods, findings, and innovative approaches to NSA experts.</li>
+                                    <li>Drove collaborations with sub-team to create and test a fully functioning retrieval augmented generation (RAG) pipeline.</li>
+                                    <li>Developed experience utilizing high-performance computing clusters to work with and accelerate large language models.</li>
+                                    <li>Optimized and compared system performance for information retrieval by implementing a vector and graph database.</li>
+                                    <li>Integrated instructional capabilities for query expansion and answer generation by leveraging LLMs from OpenAI and Mistral.</li>
+                                    <li>Applied key frameworks such as LangChain, Hugging Face, and PyTorch to build and refine the RAG pipeline.</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Experience Section (NEW) -->
+    <section id="experience" class="py-5 my-5">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <ul class="experience-list text-decoration-none">
+                        <li class="experience-list-item fade-in">
+                            <div class="experience-header">
+                                <h3 class="experience-title">Software Engineering Intern</h3>
+                                <span class="experience-duration">May 2025 — Jul. 2025</span>
+                            </div>
+                            <div class="experience-company">North Carolina State University</div>
+                            <div class="experience-location">Raleigh, North Carolina, USA</div>
+                            <div class="experience-content">
+                                <p>Improving NC State's DeepThought learning plaform for students.</p>
+                                <ul>
+                                    <li>Prototyped front-end webpages for university faculty using Python (Flask) with wireframing and UI design.</li>
+                                    <li>Debugged and optimized an existing Flask application, improving application stability, performance, and maintainability.</li>
+                                    <li>Enhanced a large language model by analyzing student forum and help-request data, improving response accuracy and contextual relevance for an online learning platform.</li>
+                                    <li>Communicated project progress, challenges, and outcomes through weekly meetings and a technical poster presentation.</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="experience-list-item fade-in">
+                            <div class="experience-header">
+                                <h3 class="experience-title">Software Developer (Senior Design)</h3>
+                                <span class="experience-duration">Jan. 2025 — May 2025</span>
+                            </div>
+                            <div class="experience-company">Hitachi Energy & North Carolina State University</div>
+                            <div class="experience-location">Raleigh, North Carolina, USA</div>
+                            <div class="experience-content">
+                                <p>Working with single-board computers to create drivers for Hitachi's TXpert Ecosystem.</p>
+                                <ul>
+                                    <li>Developing Linux drivers in C for an industrial IoT monitoring system within Hitachi Energy's TXpert ecosystem, enabling real-
+                                        time monitoring of bushings and tap changers with embedded systems (e.g. single board computers and I/O boards).</li>
+                                    <li>Collaborating with a team to gather requirements from industry sponsors to ensure alignment with product specifications.</li>
+                                    <li>Implementing software drivers for various sensors and communication protocols including GPS, I2C, SPI, and USB interfaces.</li>
+                                    <li>Creating and validating drivers for temperature, humidity, vibration, and current measurement systems with a platform which follows the software development lifecycle practices.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="experience-list-item fade-in">
+                            <div class="experience-header">
+                                <h3 class="experience-title">Undergraduate Research Assistant</h3>
+                                <span class="experience-duration">Sep. 2023 — May 2025</span>
+                            </div>
+                            <div class="experience-company">North Carolina State University</div>
+                            <div class="experience-location">Raleigh, North Carolina, USA</div>
+                            <div class="experience-content">
+                                <p>Worked with Large Language Models, Retrieval-Augmented Generation, and Machine Learning for microprocessor security.</p>
+                                <ul>
+                                    <li>Investigated improving microarchitectural design and security using RAG systems to potentially support the detection of hardware vulnerabilities in Intel-based CPUs.</li>
+                                    <li>Analyzed and interpreted the results of adversarial machine-learning experiments to improve detection of malware.</li>
+                                    <li>Performed research on adversarial machine learning algorithms by evaluating various models for security anomalies.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="experience-list-item fade-in">
+                            <div class="experience-header">
+                                <h3 class="experience-title">Artifical Intelligence Intern</h3>
+                                <span class="experience-duration">Jun. 2024 — Aug. 2024</span>
+                            </div>
+                            <div class="experience-company">National Security Agency</div>
+                            <div class="experience-location">Catonsville, Maryland, USA</div>
+                            <div class="experience-content">
                                 <p>Served as a researcher at the Laboratory of Physical Sciences at Research Park.</p>
                                 <ul>
                                     <li>Co-authored and presented a research paper detailing project methods, findings, and innovative approaches to NSA experts.</li>
@@ -416,7 +455,7 @@
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <!-- Graduate Courses -->
-                    <div class="coursework-category fade-in">
+                    <div class="coursework-list-item fade-in">
                         <h3 class="coursework-category-title">Graduate Courses</h3>
                         <ul class="course-list">
                             <li class="course-item">
@@ -450,21 +489,21 @@
                             </li>
                             <li class="course-item">
                                 <span class="course-code">CSC 561</span> - 
-                                <span class="course-name">Principles of Computer Graphics
+                                <span class="course-name">Principles of Computer Graphics</span>
                                 <p class="course-description">
                                     Introduction to computer graphics. Includes learning about ray tracing and rasterization with WebGL. Projects utilized WebGL to create scenes that the user can manipulate.
                                 </p>
                             </li>
                             <li class="course-item">
                                 <span class="course-code">CSC 574</span> - 
-                                <span class="course-name">Computer and Network Security
+                                <span class="course-name">Computer and Network Security</span>
                                 <p class="course-description">
                                     Introduction on computer security (threat models, cryptography, user authentication), network security (TLS, routing, DNS, etc.), vulnerabilities, and privacy.
                                 </p>
                             </li>
                             <li class="course-item">
                                 <span class="course-code">CSC 581</span> - 
-                                <span class="course-name">Game Engine Foundations
+                                <span class="course-name">Game Engine Foundations</span>
                                 <p class="course-description">
                                     Introduction on game engine designs and concepts. Includes working with SDL3, ZeroMQ, and other libraries to build a functioning 2D game engine. Game engine supports
                                     the use of sprites, networking (client-server & peer-to-peer), multi-key inputs, events, etc. Heavy emphasis on design of the engine and tradeoffs of implementation.
@@ -474,54 +513,45 @@
                     </div>
 
                     <!-- Undergraduate Courses -->
-                    <div class="coursework-category fade-in">
+                    <div class="coursework-list-item fade-in">
                         <h3 class="coursework-category-title">Undergraduate Courses</h3>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="course-list">
-                                    <li class="course-item">
-                                        <span class="course-code">CSC 316</span> - 
-                                        <span class="course-name">Data Structures and Algorithms</span>
-                                        <p class="course-description">Advanced algorithms, computational complexity, and optimization techniques.</p>
-                                    </li>
-                                    <li class="course-item">
-                                        <span class="course-code">CSC 326</span> - 
-                                        <span class="course-name">Software Engineering</span>
-                                        <p class="course-description">Full-stack development, agile methodologies, and software development lifecycle.</p>
-                                    </li>
-                                    <li class="course-item">
-                                        <span class="course-code">CSC 333</span> - 
-                                        <span class="course-name">Automata, Grammars, and Computability</span>
-                                        <p class="course-description">Formal languages, computational models, and theoretical computer science.</p>
-                                    </li>
-
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="course-list">
-                                    <li class="course-item">
-                                        <span class="course-code">CSC 230</span> - 
-                                        <span class="course-name">C and Software Tools</span>
-                                        <p class="course-description">Introduction to C and it's core concepts.</p>
-                                    </li>
-                                    <li class="course-item">
-                                        <span class="course-code">CSC 246</span> - 
-                                        <span class="course-name">Concepts and Facilities of Operating Systems for Computer Scientists</span>
-                                        <p class="course-description">Fundamental concepts of operating systems like proceses, threads, file system, etc.</p>
-                                    </li>
-                                    <li class="course-item">
-                                        <span class="course-code">CSC 342</span> - 
-                                        <span class="course-name">Applied Web-based Client-Server Computing</span>
-                                        <p class="course-description">Exploration of client-server computing on the World Wide Web.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <ul class="course-list">
+                            <li class="course-item">
+                                <span class="course-code">CSC 316</span> - 
+                                <span class="course-name">Data Structures and Algorithms</span>
+                                <p class="course-description">Advanced algorithms, computational complexity, and optimization techniques.</p>
+                            </li>
+                            <li class="course-item">
+                                <span class="course-code">CSC 326</span> - 
+                                <span class="course-name">Software Engineering</span>
+                                <p class="course-description">Full-stack development, agile methodologies, and software development lifecycle.</p>
+                            </li>
+                            <li class="course-item">
+                                <span class="course-code">CSC 333</span> - 
+                                <span class="course-name">Automata, Grammars, and Computability</span>
+                                <p class="course-description">Formal languages, computational models, and theoretical computer science.</p>
+                            </li>
+                            <li class="course-item">
+                                <span class="course-code">CSC 230</span> - 
+                                <span class="course-name">C and Software Tools</span>
+                                <p class="course-description">Introduction to C and it's core concepts.</p>
+                            </li>
+                            <li class="course-item">
+                                <span class="course-code">CSC 246</span> - 
+                                <span class="course-name">Concepts and Facilities of Operating Systems for Computer Scientists</span>
+                                <p class="course-description">Fundamental concepts of operating systems like proceses, threads, file system, etc.</p>
+                            </li>
+                            <li class="course-item">
+                                <span class="course-code">CSC 342</span> - 
+                                <span class="course-name">Applied Web-based Client-Server Computing</span>
+                                <p class="course-description">Exploration of client-server computing on the World Wide Web.</p>
+                            </li>
+                        </ul>
                     </div>
 
-                    <!-- Skills Developed -->
+                    <!-- Skills -->
                     <div class="coursework-skills fade-in">
-                        <h3 class="coursework-category-title">Skills Developed</h3>
+                        <h3 class="coursework-category-title">Skills</h3>
                         <div class="row">
                             <div class="col-md-4">
                                 <h4 class="skill-group-title">Programming Languages</h4>
@@ -564,7 +594,7 @@
     <section id="contact" class="py-5 my-5">
         <div class="container">
             <h2 class="section-title">Contact</h2>
-                <div class="col-lg-6">
+                <div class="col-lg-8 mx-auto">
                     <div class="contact-info">
                         <div class="contact-info-item">
                             <div class="contact-icon">
